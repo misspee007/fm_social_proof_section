@@ -226,7 +226,6 @@ footer .attribution {
 @media screen and (min-width: 1536px) {
   body {
     min-height: 100vh;
-    background-size: 31rem, contain;
   }
   main {
     padding: 6% 9% 4% 9%;
