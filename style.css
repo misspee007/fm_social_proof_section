@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+}
+body {
+  background: url("./images/bg-pattern-top-mobile.svg") no-repeat,
+    url("./images/bg-pattern-bottom-mobile.svg") no-repeat bottom left;
+  background-size: contain;
+}
+
+main {
+  padding: 5rem 2rem 2rem 2rem;
+}
+
+.top-section {
+  text-align: center;
+}
+.top-left h1 {
+  color: var(--very-dark-magenta);
+  font-size: 33px;
+  font-weight: 700;
+  padding: 0% 10%;
+}
+.top-left p {
+  color: var(--dark-grayish-magenta);
+  padding: 7% 0%;
+}
+.ratings {
+  border: 1px transparent;
+  border-radius: 5px;
+  background-color: var(--light-grayish-magenta);
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+.ratings p {
+  margin-top: 10px;
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+}
+
+.bottom-section {
+  margin-top: 3rem;
+}
+.review-card {
+  background-color: var(--very-dark-magenta);
+  border-radius: 9px;
+  margin: 1rem 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 1.7rem;
+}
+.card-header {
+  display: flex;
+  column-gap: 1.5rem;
+  align-items: center;
+}
+.card-header img {
+  height: 41px;
+  border-radius: 50%;
+}
+.header-text .name {
+  color: var(--light-grayish-magenta);
+  line-height: 23px;
+}
+.header-text .desc {
+  color: var(--soft-pink);
+}
+.card-body p {
+  color: var(--light-grayish-magenta);
+  line-height: 23px;
+}
+
+footer {
+  margin-bottom: 1rem;
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* end mobile screen */
+
+/* Larger screen sizes */
+@media screen and (min-width: 821px) {
+  body {
+    background: url("./images/bg-pattern-top-desktop.svg") no-repeat,
+      url("./images/bg-pattern-bottom-desktop.svg") no-repeat bottom right;
+  }
+  main {
+    padding: 8% 7% 8% 7%;
+  }
+
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .top-left {
+    text-align: left;
+    width: 30%;
+  }
+  .top-left h1 {
+    padding: 0;
+    font-size: 2.5rem;
+  }
+  .top-left p {
+    font-weight: 500;
+  }
+  .top-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 59%;
+  }
+
+  .bottom-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+  }
+  .review-card {
+    padding: 2.5rem 2rem;
+  }
+  .bottom-section .irene-container,
+  .anne-container {
+    position: relative;
+  }
+  .bottom-section .irene {
+    position: absolute;
+    top: 6%;
+  }
+  .bottom-section .anne {
+    position: absolute;
+    top: 12%;
+  }
+
+  .ratings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    margin: 0;
+  }
+  .ratings p {
+    margin: 0 4rem 0 0;
+  }
+  .ratings .stars {
+    margin-left: 2rem;
+  }
+  .rating1-container {
+    margin-right: 5rem;
+  }
+  .rating2-container {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  .rating3-container {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .top-left h1 {
+    font-size: 4rem;
+  }
+  .top-right {
+    width: 50%;
+  }
+  .ratings {
+    padding: 2rem 0;
+  }
+  .rating1-container {
+    margin-right: 9rem;
+  }
+  .rating2-container {
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+  }
+  .rating3-container {
+    margin-left: 9rem;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  body {
+    min-height: 100vh;
+    background-size: 31rem, contain;
+  }
+  main {
+    padding: 6% 9% 4% 9%;
+    height: 95vh;
+  }
+  .top-left {
+    width: 30%;
+  }
+  .top-left h1 {
+    font-size: 2.5vw;
+  }
+  .ratings {
+    padding: 1rem 0;
+  }
+  .bottom-section .irene {
+    top: 8%;
+  }
+  .bottom-section .anne {
+    top: 16%;
+  }
+}
+
