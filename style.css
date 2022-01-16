@@ -90,31 +90,47 @@ footer {
   margin-bottom: 1rem;
 }
 footer .attribution {
-  font-size: 11px;
+  font-size: 0.6rem;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  font-size: 0.6rem;
 }
 /* end mobile screen */
 
+
 /* Larger screen sizes */
-@media screen and (min-width: 821px) {
+@media screen and (min-width: 730px) {
   body {
-    background: url("./images/bg-pattern-top-desktop.svg") no-repeat,
-      url("./images/bg-pattern-bottom-desktop.svg") no-repeat bottom right;
+    background-size: 400px;
   }
   main {
-    padding: 8% 7% 8% 7%;
+    padding: 10% 10% 4% 10%;
   }
+  .ratings {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    column-gap: 2rem;
+    justify-content: center;
+  }
+  .ratings p {
+    margin-top: 0;
+  }
+}
 
+@media screen and (min-width: 769px) {
+  main {
+    padding: 6% 7% 4% 7%;
+  }
   .top-section {
     display: flex;
     justify-content: space-between;
   }
   .top-left {
     text-align: left;
-    width: 30%;
+    width: 45%;
   }
   .top-left h1 {
     padding: 0;
@@ -124,9 +140,42 @@ footer .attribution {
     font-weight: 500;
   }
   .top-right {
+    width: 54%;
+  }
+
+  .rating1-container {
+    margin-right: 4rem;
+  }
+  .rating2-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .rating3-container {
+    margin-left: 5rem;
+  }
+  .review-card {
+    padding: 5rem;
+  }
+}
+
+@media screen and (min-width: 1243px) {
+  body {
+    background: url("./images/bg-pattern-top-desktop.svg") no-repeat,
+      url("./images/bg-pattern-bottom-desktop.svg") no-repeat bottom right;
+      background-size: 466px, 1105px;
+    min-height: 100vh;
+  }
+
+  .top-left {
+    width: 37%;
+  }
+  .top-left h1 {
+    font-size: 3rem;
+  }
+  .top-right {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 59%;
+    grid-template-rows: 5rem 5rem 5rem;
+    width: 58%;
   }
 
   .bottom-section {
@@ -151,39 +200,15 @@ footer .attribution {
   }
 
   .ratings {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     margin: 0;
   }
   .ratings p {
     margin: 0 4rem 0 0;
   }
   .ratings .stars {
-    margin-left: 2rem;
-  }
-  .rating1-container {
-    margin-right: 5rem;
-  }
-  .rating2-container {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-  .rating3-container {
-    margin-left: 5rem;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .top-left h1 {
-    font-size: 4rem;
-  }
-  .top-right {
-    width: 50%;
-  }
-  .ratings {
-    padding: 2rem 0;
+    margin: 0 2rem 0 2rem;
   }
   .rating1-container {
     margin-right: 9rem;
@@ -196,6 +221,7 @@ footer .attribution {
     margin-left: 9rem;
   }
 }
+
 
 @media screen and (min-width: 1536px) {
   body {
