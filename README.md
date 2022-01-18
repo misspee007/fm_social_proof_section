@@ -23,13 +23,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://github.com/misspee007/fm_social_proof_section/blob/main/images/Screenshot.png)
 
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/responsive-webpage-using-grid-and-flexbox-DflajIdQx](https://your-solution-url.com)
-- Live Site URL: [https://misspee007.github.io/fm_social_proof_section/](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-webpage-using-grid-and-flexbox-DflajIdQx](https://www.frontendmentor.io/solutions/responsive-webpage-using-grid-and-flexbox-DflajIdQx)
+- Live Site URL: [https://misspee007.github.io/fm_social_proof_section/](https://misspee007.github.io/fm_social_proof_section/)
 
 ## My process
 
